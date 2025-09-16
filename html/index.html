@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/fonts.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="../static/media/img/logo.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <title>Отдел ГО ЧС | Дальнереченский муниципальный район</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav_and_logo">
+            <div class="logo">
+                <a href="index.html"><img src="../static/media/img/logo.png" alt="Логотип"></a>
+            </div>
+            <div class="burger-menu">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+            <div class="font-size-controls">
+                <div class="sign-style">Для слабовидящих</div>
+                <div class="font-size">
+                    <button class="font-size-btn" onclick="changeFontSize(-1)">
+                        <img src="../static/media/img/minus.png" alt="">
+                    </button>
+                    <button class="font-size-btn" onclick="resetFontSize()">
+                        <img src="../static/media/img/A.png" alt="">
+                    </button>
+                    <button class="font-size-btn" onclick="changeFontSize(1)">
+                        <img src="../static/media/img/plus.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <nav class="navigation">
+                <a href="departament_gochs.html" class="a_text">Отдел ГОЧС</a>
+                <a href="antiterror.html" class="a_text">Юридический отдел</a>
+                <a href="news.html" class="a_text">Новости</a>
+                <a href="login.html" class="a_text">Войти</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="contatcs">
+    <div class="name-info">Сайт администрации дальнереченского муниципального района<br>Отдел ГО ЧС</div>
+        <div class="main-div-info">
+            <div class="photo-info2">
+                <img src="../static/media/img/build_photo.png" alt="">
+            </div>
+            <div class="info-info">
+                <div class="name-info">Контактная информация</div>
+                <div class="info-block">
+                    <div class="block-info">
+                        <img src="../static/media/img/calendar.png" alt="">
+                        <p>Режим работы:<BR> Пн – Чт с 8-45 до 18-00<br>Пт – с 8-45 до 16-45<br>Обед: с 13-00 до
+                            14-00<br> Суббота, воскресенье - выходные</p>
+                    </div>
+                    <div class="block-info">
+                        <img src="../static/media/img/geo.png" alt="">
+                        <p>Почтовый адрес:<BR> 692132, Приморский край, г. Дальнереченск, ул. Ленина, д. 90</p>
+                    </div>
+                    <div class="block-info">
+                        <img src="../static/media/img/mail.png" alt="">
+                        <p>Электронная почта:<br> gochsdmr@mail.ru</p>
+                    </div>
+                    <div class="block-info">
+                        <img src="../static/media/img/phone.png" alt="">
+                        <p>Факс:<br> (42356) 25-4-14</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contatcs">
+            <div class="info-info">
+                <div class="name-info">Социальные Сети</div>
+                <div class="info-block">
+                    <div class="block-info">
+                        <img src="../static/media/img/ok.png" alt="">
+                        <p>Однокласники:<br><a class="a_style" href="https://ok.ru/profile/574279125466">https://ok.ru/profile/574279125466</a></p>
+                    </div>
+                    <div class="block-info">
+                        <img src="../static/media/img/vk.png" alt="">
+                        <p>ВКонтакте:<br><a class="a_style" href="https://ok.ru/profile/574279125466">https://ok.ru/profile/574279125466</a></p>
+                    </div>
+                    <div class="block-info">
+                        <img src="../static/media/img/tg.png" alt="">
+                        <p>Телеграм:<br><a class="a_style" href="https://ok.ru/profile/574279125466">https://ok.ru/profile/574279125466</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3 class="footer-title">Контакты</h3>
+                <ul class="footer-contacts">
+                    <li><i class="fas fa-map-marker-alt"></i> г. Дальнереченск, ул. Героев Даманского, 28</li>
+                    <li><i class="fas fa-phone"></i> +7 (42356) 25-4-62</li>
+                    <li><i class="fas fa-envelope"></i> gochsdmr@mail.ru</li>
+                    <li><i class="fas fa-clock"></i> Пн-Чт: 8:45-18:00, Пт: 8:45-16:45</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Разделы</h3>
+                <ul class="footer-links">
+                    <li><a href="achivment.html">Достижения отдела</a></li>
+                    <li><a href="antiterror.html">Антитеррор</a></li>
+                    <li><a href="oborona.html">Гражданская оборона</a></li>
+                    <li><a href="chs.html">Чрезвычайные ситуации</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="about_author.html">Об авторе</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Мы в соцсетях</h3>
+                <div class="social-links">
+                    <script src="https://yastatic.net/share2/share.js"></script>
+                    <div class="ya-share2" data-curtain data-size="l" data-shape="round"
+                        data-services="vkontakte,odnoklassniki,telegram"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Отдел ГО ЧС Дальнереченского муниципального района</p>
+        </div>
+    </footer>
+    <script src="../static/js/burger-menu.js"></script>
+    <script src="../static/js/font-size.js"></script>
+    <script src="../static/js/buttonhide.js"></script>
+    <button id="backToTop" class="back-to-top" title="Наверх">↑</button>
+</body>
+
+</html>
