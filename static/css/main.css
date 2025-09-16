@@ -373,6 +373,185 @@ header {
     transition: color 0.3s;
 }
 
+.Map {
+    padding: 60px 20px;
+    background-color: white;
+    max-width: 1400px;
+    margin: 0 auto 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.department {
+    padding: 60px 20px;
+    background-color: white;
+    max-width: 1400px;
+    margin: 0 auto 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.blocks-department {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.info-department {
+    padding: 30px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    flex: 1 1 300px;
+}
+
+li {
+    list-style-type: numbers;
+}
+
+.info-department h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.info-department h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #3498db;
+}
+
+.info-department p {
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.info-department a {
+    display: block;
+    color: #3498db;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: color 0.3s;
+}
+
+.info-department a:hover {
+    color: #2c3e50;
+    text-decoration: underline;
+}
+
+        .table-div{
+    padding: 60px 20px;
+    background-color: white;
+    max-width: 1400px;
+    margin: 0 auto 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+        }
+
+        .contacts-container {
+            padding: 60px 20px;
+            background-color: white;
+            max-width: 1400px;
+            margin: 0 auto 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        
+        .contacts-container h2 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-size: 24px;
+            position: relative;
+            padding-bottom: 15px;
+            text-align: center;
+        }
+        
+        .contacts-container h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: #3498db;
+        }
+        
+        .contacts-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contacts-table th {
+            background-color: #3498db;
+            color: white;
+            text-align: left;
+            padding: 15px;
+            font-weight: 600;
+        }
+        
+        .contacts-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .contacts-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .contacts-table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        .contacts-table tr:hover {
+            background-color: #e8f4fc;
+        }
+        
+        .section-header {
+            background-color: #2c3e50 !important;
+            color: white !important;
+            font-weight: bold;
+        }
+        
+        .section-header td {
+            padding: 15px;
+            font-size: 18px;
+        }
+        
+        .subheader {
+            background-color: #d6dbdf !important;
+            font-weight: bold;
+        }
+        
+        .phone-link {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .phone-link:hover {
+            color: #2c3e50;
+            text-decoration: underline;
+        }
+
 .site-footer {
     background: #2c3e50;
     color: #ecf0f1;
@@ -572,3 +751,18 @@ header {
         padding: 10px;
     }
 }
+        @media (max-width: 768px) {
+            .contacts-table {
+                display: block;
+                overflow-x: auto;
+            }
+            
+            .info-department {
+                padding: 20px;
+            }
+            
+            .contacts-table th, 
+            .contacts-table td {
+                padding: 10px;
+            }
+        }
