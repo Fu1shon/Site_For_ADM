@@ -1,11 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/fonts.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="static/media/img/logo.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <title>Главная страница | Дальнереченский муниципальный район</title>
 </head>
+
 <body>
-    <h1>ХУЙ</h1>
+    <header>
+        <div class="nav_and_logo">
+            <div class="logo">
+                <a href="index.html"><img src="static/media/img/logo.png" alt="Логотип"></a>
+            </div>
+            <div class="burger-menu">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+            <div class="font-size-controls">
+                <div class="sign-style">Для слабовидящих</div>
+                <div class="font-size">
+                    <button class="font-size-btn" onclick="changeFontSize(-1)">
+                        <img src="static/media/img/minus.png" alt="">
+                    </button>
+                    <button class="font-size-btn" onclick="resetFontSize()">
+                        <img src="static/media/img/A.png" alt="">
+                    </button>
+                    <button class="font-size-btn" onclick="changeFontSize(1)">
+                        <img src="static/media/img/plus.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <nav class="navigation">
+                <a href="html/departament_gochs.html" class="a_text">Отдел ГОЧС</a>
+                <a href="html/legal_department.html" class="a_text">Юридический отдел</a>
+                <a href="html/news.html" class="a_text">Новости</a>
+                <a href="html/login.html" class="a_text">Войти</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="contatcs">
+    <div class="name-info">Сайт администрации дальнереченского муниципального района<br>Отдел ГО ЧС</div>
+        <div class="main-div-info">
+            <div class="photo-info2">
+                <img src="static/media/img/build_photo.png" alt="">
+            </div>
+            <div class="info-info">
+                <div class="name-info">Контактная информация</div>
+                <div class="info-block">
+                    <div class="block-info">
+                        <img src="static/media/img/calendar.png" alt="">
+                        <p>Режим работы:<BR> Пн – Чт с 8-45 до 18-00<br>Пт – с 8-45 до 16-45<br>Обед: с 13-00 до
+                            14-00<br> Суббота, воскресенье - выходные</p>
+                    </div>
+                    <div class="block-info">
+                        <img src="static/media/img/geo.png" alt="">
+                        <p>Почтовый адрес:<BR> 692132, Приморский край, г. Дальнереченск, ул. Ленина, д. 90</p>
+                    </div>
+                    <div class="block-info">
+                        <img src="static/media/img/mail.png" alt="">
+                        <p>Электронная почта:<br> gochsdmr@mail.ru</p>
+                    </div>
+                    <div class="block-info">
+                        <img src="static/media/img/phone.png" alt="">
+                        <p>Факс:<br> (42356) 25-4-14</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Map">
+        <div class="name-info">Где мы находимся?</div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2774.982498133905!2d133.72832087664966!3d45.931649602127926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5e55a75d994b4959%3A0x711c14edad15c0fe!2z0YPQuy4g0JPQtdGA0L7QtdCyINCU0LDQvNCw0L3RgdC60L7Qs9C-LCAyOCwg0JTQsNC70YzQvdC10YDQtdGH0LXQvdGB0LosINCf0YDQuNC80L7RgNGB0LrQuNC5INC60YDQsNC5LCA2OTIxMzI!5e0!3m2!1sru!2sru!4v1745810497572!5m2!1sru!2sru"
+            width="80%" height="550px" style="border:0; border-radius: 10px;"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+        <div class="table-div">
+            <div class="name-info">Контактная информация</div>
+            
+            <table class="contacts-table">
+                <thead>
+                    <tr>
+                        <th>Должность</th>
+                        <th>Ф.И.О.</th>
+                        <th>Телефон рабочий</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="section-header">
+                        <td colspan="3">Руководство</td>
+                    </tr>
+                    <tr>
+                        <td>Глава Дальнереченского муниципального района</td>
+                        <td>Дернов Виктор Сергеевич</td>
+                        <td><a href="tel:25414" class="phone-link">25-4-14</a></td>
+                    </tr>
+                    <tr>
+                        <td>Заместитель главы администрации Дальнереченского муниципального района</td>
+                        <td>Попов Александр Григорьевич</td>
+                        <td><a href="tel:25414" class="phone-link">25-4-14</a></td>
+                    </tr>
+                    
+                    <tr class="section-header">
+                        <td colspan="3">Управление финансов администрации Дальнереченского муниципального района</td>
+                    </tr>
+                    <tr>
+                        <td>Начальник управления финансов</td>
+                        <td>Дронова Галина Владимировна</td>
+                        <td><a href="tel:25907" class="phone-link">25-9-07</a></td>
+                    </tr>
+                    <tr>
+                        <td>Заместитель начальника управления финансов</td>
+                        <td>Бойкова Анна Александровна</td>
+                        <td><a href="tel:25771" class="phone-link">25-7-71</a></td>
+                    </tr>
+                    <tr>
+                        <td>Отдел по формированию и исполнению бюджета управления финансов</td>
+                        <td>Федоренко Ольга Михайловна</td>
+                        <td><a href="tel:25907" class="phone-link">25-9-07</a></td>
+                    </tr>
+                    <tr>
+                        <td>Отдел учета, отчетности и казначейства управления финансов</td>
+                        <td>Власенко Ольга Владимировна</td>
+                        <td><a href="tel:25948" class="phone-link">25-9-48</a></td>
+                    </tr>
+                    <tr>
+                        <td>Отдел внутреннего муниципального финансового контроля управления финансов</td>
+                        <td>-</td>
+                        <td><a href="tel:25907" class="phone-link">25-9-07</a></td>
+                    </tr>
+                    
+                    <tr class="section-header">
+                        <td colspan="3">Отделы администрации</td>
+                    </tr>
+                    <tr>
+                        <td>Юридический отдел</td>
+                        <td>Шестернин Евгений Алексеевич</td>
+                        <td><a href="tel:25017" class="phone-link">25-0-17</a></td>
+                    </tr>
+                    <tr>
+                        <td>Отдел кадров</td>
+                        <td>Титоренко Елена Сергеевна</td>
+                        <td><a href="tel:25042" class="phone-link">25-0-42</a></td>
+                    </tr>
+                    <tr>
+                        <td>Отдел по работе с территориями и делопроизводств</td>
+                        <td>Пенкина Яна Владимировна</td>
+                        <td><a href="tel:25876" class="phone-link">25-8-76</a></td>
+                    </tr>
+                    <tr>
+                        <td>Отдел архитектуры, градостроительства и ЖКХ</td>
+                        <td>Багрянцева Гульнара Чорыевна</td>
+                        <td><a href="tel:25853" class="phone-link">25-8-53</a></td>
+                    </tr>
+                    <tr>
+                        <td>Отдел ГОЧС</td>
+                        <td>Шестернина Анна Станиславовна</td>
+                        <td><a href="tel:25462" class="phone-link">25-4-62</a></td>
+                    </tr>
+                    <tr>
+                        <td>Отдел мобилизационной работы</td>
+                        <td>Калашников Евгений Вячеславович</td>
+                        <td><a href="tel:25462" class="phone-link">25-4-62</a></td>
+                    </tr>
+                    <tr>
+                        <td>Отдел экономики</td>
+                        <td>Бурдюг Мария Александровна</td>
+                        <td><a href="tel:25194" class="phone-link">25-1-94</a></td>
+                    </tr>
+                    <tr>
+                        <td>Отдел по управлению муниципальным имуществом</td>
+                        <td>Выхрестюк Наталья Владимировна</td>
+                        <td><a href="tel:25580" class="phone-link">25-5-80</a></td>
+                    </tr>
+                    <tr>
+                        <td>Отдел по организации работы комиссии по делам несовершеннолетних и защите их прав</td>
+                        <td>Демчук Маргарита Валерьевна</td>
+                        <td><a href="tel:25852" class="phone-link">25-8-52</a></td>
+                    </tr>
+                    <tr>
+                        <td>Отдел по исполнению административного законодательства</td>
+                        <td>Звонарёв Денис Олегович</td>
+                        <td><a href="tel:25081" class="phone-link">25-0-81</a></td>
+                    </tr>
+                    <tr>
+                        <td>Отдел ЗАГС</td>
+                        <td>Нарыжникова Галина Александровна</td>
+                        <td><a href="tel:25862" class="phone-link">25-8-62</a></td>
+                    </tr>
+                    <tr>
+                        <td>Архивный отдел</td>
+                        <td>Антонова Людмила Тимофеевна</td>
+                        <td><a href="tel:32195" class="phone-link">32-1-95</a></td>
+                    </tr>
+                    <tr>
+                        <td>Главный специалист по государственному управлению охраной труда</td>
+                        <td>Черновец Елена Петровна</td>
+                        <td><a href="tel:32099" class="phone-link">32-0-99</a></td>
+                    </tr>
+                    
+                    <tr class="section-header">
+                        <td colspan="3">Муниципальные учреждения</td>
+                    </tr>
+                    <tr>
+                        <td>Муниципальное казенное учреждение «Управление народного образования» Дальнереченского муниципального района</td>
+                        <td>Гуцалюк Наталья Викторовна</td>
+                        <td><a href="tel:25639" class="phone-link">25-6-39</a></td>
+                    </tr>
+                    <tr>
+                        <td>Муниципальное казенное учреждение «Районный информационно – досуговый центр» Дальнереченского муниципального района</td>
+                        <td>Щур Екатерина Андреевна</td>
+                        <td><a href="tel:25357" class="phone-link">25-3-57</a></td>
+                    </tr>
+                    <tr>
+                        <td>Муниципальное казенное учреждение «Административно – хозяйственное управление Дальнереченского муниципального района»</td>
+                        <td>Васильев Евгений Витальевич</td>
+                        <td><a href="tel:25357" class="phone-link">25-3-57</a></td>
+                    </tr>
+                    <tr>
+                        <td>Муниципальное казенное учреждение «Межведомственная централизованная бухгалтерия» Дальнереченского муниципального района</td>
+                        <td>Булгакова Елена Владимировна</td>
+                        <td><a href="tel:25709" class="phone-link">25-7-09</a></td>
+                    </tr>
+                    
+                    <tr class="section-header">
+                        <td colspan="3">Общественные организации и территориальные отделы</td>
+                    </tr>
+                    <tr>
+                        <td>Председатель Совета ветеранов войны, труда, правоохранительных органов и вооруженных сил Дальнереченского муниципального района</td>
+                        <td>Головинова Ольга Ивановна</td>
+                        <td><a href="tel:25702" class="phone-link">25-7-02</a></td>
+                    </tr>
+                    <tr>
+                        <td>Территориальный отдел опеки и попечительства департамента образования и науки Приморского края по Дальнереченскому муниципальному району</td>
+                        <td>Звягинцева Светлана Владимировна</td>
+                        <td><a href="tel:32157" class="phone-link">32-1-57</a></td>
+                    </tr>
+                    <tr>
+                        <td>Отдел по Дальнереченскому городскому округу и муниципальному району департамента труда и социального развития Приморского края</td>
+                        <td>Шевченко Оксана Владимировна</td>
+                        <td><a href="tel:32389" class="phone-link">32-3-89</a></td>
+                    </tr>
+                    <tr>
+                        <td>Территориальная избирательная комиссия Дальнереченского района</td>
+                        <td>Авраменко Валентина Антоновна</td>
+                        <td><a href="tel:25658" class="phone-link">25-6-58</a></td>
+                    </tr>
+                    <tr>
+                        <td>Диспетчер администрации</td>
+                        <td>-</td>
+                        <td><a href="tel:25735" class="phone-link">25-7-35</a></td>
+                    </tr>
+                    
+                    <tr class="section-header">
+                        <td colspan="3">Главы сельских поселений</td>
+                    </tr>
+                    <tr>
+                        <td>Глава Веденкинского сельского поселения</td>
+                        <td>Бровок Алексей Анатольевич</td>
+                        <td><a href="tel:51117" class="phone-link">51-1-17</a></td>
+                    </tr>
+                    <tr>
+                        <td>Глава Малиновского сельского поселения</td>
+                        <td>Шкаева Ольга Николаевна</td>
+                        <td><a href="tel:46117" class="phone-link">46-1-17</a></td>
+                    </tr>
+                    <tr>
+                        <td>Глава Ореховского сельского поселения</td>
+                        <td>Смекалин Николай Иванович</td>
+                        <td><a href="tel:63411" class="phone-link">63-4-11</a></td>
+                    </tr>
+                    <tr>
+                        <td>Глава Ракитненского сельского поселения</td>
+                        <td>Зиновьев Антон Васильевич</td>
+                        <td><a href="tel:45117" class="phone-link">45-1-17</a></td>
+                    </tr>
+                    <tr>
+                        <td>Глава Рождественского сельского поселения</td>
+                        <td>Выхрестюк Александр Николаевич</td>
+                        <td><a href="tel:75169" class="phone-link">75-1-69</a></td>
+                    </tr>
+                    <tr>
+                        <td>И.о.главы Сальского сельского поселения</td>
+                        <td>Трейзер Анна Сергеевна</td>
+                        <td><a href="tel:56117" class="phone-link">56-1-17</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    <div class="contatcs">
+            <div class="info-info">
+                <div class="name-info">Социальные Сети</div>
+                <div class="info-block">
+                    <div class="block-info">
+                        <img src="static/media/img/ok.png" alt="">
+                        <p>Однокласники:<br><a class="a_style" href="https://ok.ru/profile/574279125466">https://ok.ru/profile/574279125466</a></p>
+                    </div>
+                    <div class="block-info">
+                        <img src="static/media/img/vk.png" alt="">
+                        <p>ВКонтакте:<br><a class="a_style" href="https://ok.ru/profile/574279125466">https://ok.ru/profile/574279125466</a></p>
+                    </div>
+                    <div class="block-info">
+                        <img src="static/media/img/tg.png" alt="">
+                        <p>Телеграм:<br><a class="a_style" href="https://ok.ru/profile/574279125466">https://ok.ru/profile/574279125466</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3 class="footer-title">Контакты</h3>
+                <ul class="footer-contacts">
+                    <li><i class="fas fa-map-marker-alt"></i> г. Дальнереченск, ул. Героев Даманского, 28</li>
+                    <li><i class="fas fa-phone"></i> +7 (42356) 25-4-62</li>
+                    <li><i class="fas fa-envelope"></i> gochsdmr@mail.ru</li>
+                    <li><i class="fas fa-clock"></i> Пн-Чт: 8:45-18:00, Пт: 8:45-16:45</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Разделы</h3>
+                <ul class="footer-links">
+                    <li><a href="html/departament_gochs.html">Отдел ГОЧС</a></li>
+                    <li><a href="html/legal_department.html">Юридический отдел</a></li>
+                    <li><a href="html/news.html">Новости</a></li>
+                    <li><a href="html/about_author.html">Об авторе</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Мы в соцсетях</h3>
+                <div class="social-links">
+                    <script src="https://yastatic.net/share2/share.js"></script>
+                    <div class="ya-share2" data-curtain data-size="l" data-shape="round"
+                        data-services="vkontakte,odnoklassniki,telegram"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Главная страница Дальнереченского муниципального района</p>
+        </div>
+    </footer>
+    <script src="static/js/burger-menu.js"></script>
+    <script src="static/js/font-size.js"></script>
+    <script src="static/js/buttonhide.js"></script>
+    <button id="backToTop" class="back-to-top" title="Наверх">↑</button>
 </body>
+
 </html>
